@@ -1,0 +1,8 @@
+D:\C#\chate\chate\obj\Debug\net5.0\chate.csproj.AssemblyReference.cache
+D:\C#\chate\chate\obj\Debug\net5.0\chate.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\chate\chate\obj\Debug\net5.0\chate.AssemblyInfoInputs.cache
+D:\C#\chate\chate\obj\Debug\net5.0\chate.AssemblyInfo.cs
+D:\C#\chate\chate\obj\Debug\net5.0\chate.csproj.CoreCompileInputs.cache
+D:\C#\chate\chate\obj\Debug\net5.0\chate.MvcApplicationPartsAssemblyInfo.cache
+D:\C#\chate\chate\obj\Debug\net5.0\chate.RazorAssemblyInfo.cache
+D:\C#\chate\chate\obj\Debug\net5.0\chate.RazorAssemblyInfo.cs
