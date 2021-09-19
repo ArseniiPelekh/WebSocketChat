@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\chate\\chate\\Chate.csproj": {}
+    "D:\\C#\\Chate\\chate\\Chate.csproj": {}
   },
   "projects": {
-    "D:\\C#\\chate\\chate\\Chate.csproj": {
+    "D:\\C#\\Chate\\chate\\Chate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\chate\\chate\\Chate.csproj",
+        "projectUniqueName": "D:\\C#\\Chate\\chate\\Chate.csproj",
         "projectName": "Chate",
-        "projectPath": "D:\\C#\\chate\\chate\\Chate.csproj",
+        "projectPath": "D:\\C#\\Chate\\chate\\Chate.csproj",
         "packagesPath": "C:\\Users\\Arsenii Pelekh\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\chate\\chate\\obj\\",
+        "outputPath": "D:\\C#\\Chate\\chate\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Arsenii Pelekh\\AppData\\Roaming\\NuGet\\NuGet.Config",
