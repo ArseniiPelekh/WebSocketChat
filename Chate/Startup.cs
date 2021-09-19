@@ -1,8 +1,10 @@
+using Chate.Extension;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace Chate
 {
@@ -16,9 +18,11 @@ namespace Chate
 
         public void ConfigureServices(IServiceCollection services) {
             services.AddRazorPages();
+            services.AddWebSocketManager();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,
+                IServiceProvider serviceProvider) {
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
             }
@@ -33,6 +37,9 @@ namespace Chate
             app.UseEndpoints(endpoints => {
                 endpoints.MapRazorPages();
             });
+
+            app.UseWebSockets();
+            app.MapSockets("/ws", serviceProvider.GetService<WebSocketMessageHandler>());
         }
     }
 }
