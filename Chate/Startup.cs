@@ -1,4 +1,5 @@
 using Chate.Extension;
+using Chate.Handlers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
