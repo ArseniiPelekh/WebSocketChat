@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Net.WebSockets;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Chate.Middelware
@@ -16,9 +17,12 @@ namespace Chate.Middelware
             Handler = handler;
         }
 
-        private async Task Receive(WebSocket webSocket, object webSocket2, 
-                Action<WebSocketReceiveResult, byte[]> action, object messageHandle) {
-            throw new NotImplementedException();
+        private async Task Receive(WebSocket webSocket, Action<WebSocketReceiveResult, byte[]> messageHandle) {
+            var buffer = new byte[1024 * 4];
+            while (webSocket.State == WebSocketState.Open) {
+                var result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+                messageHandle(result, buffer);
+            }
         }
 
         public async Task InvokeAsync(HttpContext context) {
